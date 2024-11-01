@@ -37,7 +37,7 @@ public class Driver {
         boolean result = sln141.hasCycle(node1);
         System.out.println(result);*/
 
-        ListNode node1 = new ListNode(1);
+ /*     ListNode node1 = new ListNode(1);
         ListNode node2 = new ListNode(2);
         ListNode node3 = new ListNode(4);
 
@@ -60,11 +60,30 @@ public class Driver {
         {
             System.out.print(result.val+ " ");
             result = result.next;
+        }*/
+
+ // Driver code for Solution 143
+        ListNode node1 = new ListNode(1);
+        ListNode node2 = new ListNode(2);
+        ListNode node3 = new ListNode(3);
+        ListNode node4 = new ListNode(4);
+        ListNode node5 = new ListNode(5);
+
+        node1.next = node2;
+        node2.next = node3;
+        node3.next = node4;
+        node4.next = node5;
+        node5.next = null;
+
+        Solution143 sln143 = new Solution143();
+        sln143.reorderList(node1);
+        ListNode count = node1;
+        while(count!=null)
+        {
+            System.out.print(count.val+ " ");
+            count = count.next;
         }
 
-
     }
-
-
 
 }
