@@ -63,7 +63,7 @@ public class Driver {
         }*/
 
  // Driver code for Solution 143
-        ListNode node1 = new ListNode(1);
+/*        ListNode node1 = new ListNode(1);
         ListNode node2 = new ListNode(2);
         ListNode node3 = new ListNode(3);
         ListNode node4 = new ListNode(4);
@@ -82,6 +82,27 @@ public class Driver {
         {
             System.out.print(count.val+ " ");
             count = count.next;
+        }*/
+//Driver code for Solution 19
+        ListNode node1 = new ListNode(1);
+        ListNode node2 = new ListNode(2);
+        ListNode node3 = new ListNode(3);
+        ListNode node4 = new ListNode(4);
+        ListNode node5 = new ListNode(5);
+
+        node1.next = node2;
+        node2.next = node3;
+        node3.next = node4;
+        node4.next = node5;
+        node5.next = null;
+
+        Solution19 sln19 = new Solution19();
+        ListNode result = sln19.removeNthFromEnd(node1,2);
+
+        while(result!=null)
+        {
+            System.out.print(result.val+ " ");
+            result = result.next;
         }
 
     }
