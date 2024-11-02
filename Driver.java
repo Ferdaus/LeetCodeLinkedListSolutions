@@ -189,7 +189,7 @@ public class Driver {
         System.out.println(" Palindrome: "+result);*/
 
         //Driver code for 83
-        ListNode node1 = new ListNode(1);
+/*        ListNode node1 = new ListNode(1);
         ListNode node2 = new ListNode(1);
         ListNode node3 = new ListNode(2);
         ListNode node4 = new ListNode(3);
@@ -204,7 +204,21 @@ public class Driver {
 
         Solution83 sln83 = new Solution83();
         ListNode result = sln83.deleteDuplicates(node1);
-        printList(result);
+        printList(result);*/
+
+        //Driver code for 1290
+        ListNode node1 = new ListNode(1);
+        ListNode node2 = new ListNode(0);
+        ListNode node3 = new ListNode(1);
+
+
+        node1.next = node2;
+        node2.next = node3;
+        node3.next = null;
+
+        Solution1290 sln1290 = new Solution1290();
+        int result = sln1290.getDecimalValue(node1);
+        System.out.println("Decimal va;lue is:"+ result);
     }
 
     public static void printList(ListNode result){
