@@ -173,7 +173,7 @@ public class Driver {
         ListNode result = sln160.getIntersectionNode(nodeA, nodeB);
         printList(result);*/
 //Driver code for  234
-        ListNode node1 = new ListNode(1);
+/*        ListNode node1 = new ListNode(1);
         ListNode node2 = new ListNode(2);
         ListNode node3 = new ListNode(2);
         ListNode node4 = new ListNode(1);
@@ -186,7 +186,25 @@ public class Driver {
 
         Solution234 sln234 = new Solution234();
         boolean result = sln234.isPalindrome(node1);
-        System.out.println(" Palindrome: "+result);
+        System.out.println(" Palindrome: "+result);*/
+
+        //Driver code for 83
+        ListNode node1 = new ListNode(1);
+        ListNode node2 = new ListNode(1);
+        ListNode node3 = new ListNode(2);
+        ListNode node4 = new ListNode(3);
+        ListNode node5 = new ListNode(3);
+
+
+        node1.next = node2;
+        node2.next = node3;
+        node3.next = node4;
+        node4.next = node5;
+        node5.next = null;
+
+        Solution83 sln83 = new Solution83();
+        ListNode result = sln83.deleteDuplicates(node1);
+        printList(result);
     }
 
     public static void printList(ListNode result){
