@@ -221,7 +221,7 @@ public class Driver {
         System.out.println("Decimal value is:"+ result);*/
 
 //Driver for 876
-        ListNode node1 = new ListNode(1);
+/*        ListNode node1 = new ListNode(1);
         ListNode node2 = new ListNode(2);
         ListNode node3 = new ListNode(3);
         ListNode node4 = new ListNode(4);
@@ -237,8 +237,28 @@ public class Driver {
 
         Solution876 sln876 = new Solution876();
         ListNode result = sln876.middleNode(node1);
-        printList(result);
+        printList(result);*/
 
+        //Driver for 2
+        ListNode node1 = new ListNode(2);
+        ListNode node2 = new ListNode(4);
+        ListNode node3 = new ListNode(3);
+
+        node1.next = node2;
+        node2.next = node3;
+        node3.next = null;
+
+        ListNode node_1 = new ListNode(5);
+        ListNode node_2 = new ListNode(6);
+        ListNode node_3 = new ListNode(4);
+
+        node_1.next = node_2;
+        node_2.next = node_3;
+        node_3.next = null;
+
+        Solution2 sln2 = new Solution2();
+        ListNode result = sln2.addTwoNumbers(node1, node_1);
+        printList(result);
     }
 
     public static void printList(ListNode result){
