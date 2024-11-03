@@ -207,7 +207,7 @@ public class Driver {
         printList(result);*/
 
         //Driver code for 1290
-        ListNode node1 = new ListNode(1);
+/*        ListNode node1 = new ListNode(1);
         ListNode node2 = new ListNode(0);
         ListNode node3 = new ListNode(1);
 
@@ -218,7 +218,27 @@ public class Driver {
 
         Solution1290 sln1290 = new Solution1290();
         int result = sln1290.getDecimalValue(node1);
-        System.out.println("Decimal va;lue is:"+ result);
+        System.out.println("Decimal value is:"+ result);*/
+
+//Driver for 876
+        ListNode node1 = new ListNode(1);
+        ListNode node2 = new ListNode(2);
+        ListNode node3 = new ListNode(3);
+        ListNode node4 = new ListNode(4);
+        ListNode node5 = new ListNode(5);
+
+
+
+        node1.next = node2;
+        node2.next = node3;
+        node3.next = node4;
+        node4.next = node5;
+        node5.next = null;
+
+        Solution876 sln876 = new Solution876();
+        ListNode result = sln876.middleNode(node1);
+        printList(result);
+
     }
 
     public static void printList(ListNode result){

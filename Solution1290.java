@@ -10,6 +10,7 @@ The most significant bit is at the head of the linked list.
 Solution Approach:
  */
 
+
 public class Solution1290 {
     public int getDecimalValue(ListNode head) {
         int bitPos= 0;
