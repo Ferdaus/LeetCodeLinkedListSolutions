@@ -1,3 +1,5 @@
+import java.util.Map;
+
 public class Driver {
 
 
@@ -240,6 +242,7 @@ public class Driver {
         printList(result);*/
 
         //Driver for 2
+/*
         ListNode node1 = new ListNode(2);
         ListNode node2 = new ListNode(4);
         ListNode node3 = new ListNode(3);
@@ -259,6 +262,22 @@ public class Driver {
         Solution2 sln2 = new Solution2();
         ListNode result = sln2.addTwoNumbers(node1, node_1);
         printList(result);
+*/
+
+//Driver for 146
+        LRUCache cache = new LRUCache(2);
+
+        cache.put(1,1);
+        cache.put(2,2);
+        cache.get(1);
+        cache.put(3,3);
+        cache.get(2);
+        cache.put(4,4);
+        cache.get(1);
+        cache.get(3);
+        cache.get(4);
+        System.out.println(cache.lhm);
+
     }
 
     public static void printList(ListNode result){
