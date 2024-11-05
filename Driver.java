@@ -265,7 +265,7 @@ public class Driver {
 */
 
 //Driver for 146
-        LRUCache cache = new LRUCache(2);
+/*        LRUCache cache = new LRUCache(2);
 
         cache.put(1,1);
         cache.put(2,2);
@@ -276,7 +276,41 @@ public class Driver {
         cache.get(1);
         cache.get(3);
         cache.get(4);
-        System.out.println(cache.lhm);
+        System.out.println(cache.lhm);*/
+
+// Driver for 23 (Merge k Sorted Lists)
+
+        ListNode node1 = new ListNode(1);
+        ListNode node2 = new ListNode(4);
+        ListNode node3 = new ListNode(5);
+
+        node1.next = node2;
+        node2.next = node3;
+        node3.next = null;
+
+        ListNode node_1 = new ListNode(1);
+        ListNode node_2 = new ListNode(3);
+        ListNode node_3 = new ListNode(4);
+
+        node_1.next = node_2;
+        node_2.next = node_3;
+        node_3.next = null;
+
+        ListNode node__1 = new ListNode(2);
+        ListNode node__2 = new ListNode(6);
+
+
+        node__1.next = node__2;
+        node__2.next = null;
+
+        ListNode[] lists = new ListNode[3];
+        lists[0] = node1;
+        lists[1] = node_1;
+        lists[2] = node__1;
+
+        Solution23 sln23 = new Solution23();
+        ListNode result = sln23.mergeKLists(lists);
+        printList(result);
 
     }
 
