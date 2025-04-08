@@ -11,7 +11,7 @@ O(n)
 
 public class Solution206 {
     public ListNode reverseList(ListNode head) {
-        ListNode current = head;
+/*        ListNode current = head;
         ListNode next_node = null;
         ListNode prev = null;
 
@@ -22,7 +22,18 @@ public class Solution206 {
             current = next_node;
         }
 
-        return prev;
+        return prev;*/
 
+        ListNode prev = null;
+        ListNode curr=  head;
+        ListNode nextNode = null;
+        while(curr!=null){
+            nextNode = curr.next;
+            curr.next = prev;
+            prev  = curr;
+            curr = nextNode;
+
+        }
+        return prev;
     }
 }
